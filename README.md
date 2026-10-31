@@ -106,3 +106,7 @@ Author proposes an infinite conceptual population of bubbles with `+1` counting 
 ### RQT-057 naming and referent correction
 
 **Canonical title: Planck-to-Elemental Model.** The **bubble is an original, author-defined referent** supplied by David Lee Wise (ROOT0); do not present it as an established physical Planck-foam object or independently discovered particle. `+1 BUBBLE` names one complete reference unit. It bridges the proposed geometry, nested scaling, containment, and light-crossing duration within the model. Element identifiers H, He, Li, Be, B, C, N, O, etc. represent a modeled register, not spontaneous nucleosynthesis from scaling alone. Preserve this attribution in `.dlw` provenance without implying ownership of naturally occurring elements, standard Planck constants, or prior scientific results.
+
+## RQT-058 — Planck-to-Elemental hierarchy test
+
+[Executable browser test](./rqt-058.html): validates a hierarchy from the author-defined one-bubble referent `D0 = 1.61658e-35 m` to `10^-6 m`, with `tick = diameter/c`, scale monotonicity, decade ratios, and ideal cubic occupancy. A micrometer cube holds up to `10^12` geometrical `10^-10 m` cubic slots under the idealized grid assumption. This is not the number of real atoms, evidence of physical Planck foam, or a mechanism of element formation. The interactive report exports a machine-readable test ledger. RQT-055 remains a distinct time-codec fixture using its earlier diameter.
