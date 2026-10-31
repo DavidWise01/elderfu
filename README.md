@@ -38,3 +38,23 @@ GitHub Pages availability has not been confirmed. If needed, enable Pages under 
 Open [one-box.html](./one-box.html) or the Pages address https://davidwise01.github.io/elderfu/one-box.html (when Pages is enabled).
 
 24 Elder Futhark symbols serve as language tokens and geometric transport graphs inside one containment BOX `||||`. Vertices are selectable addresses, strokes become legal graph edges, and each successful edge traversal creates an append-only witness event. Source supports selection, stepping, automatic transport, simple program interpretation, and JSON exports. No transport outside the BOX or through absent edges is permitted. This is an experimental computational model, not historical rune programming or physical quanta.
+
+
+## RQT-048 — {{i}}-framed rune vertex transport
+The One BOX interpreter at [one-box.html](./one-box.html) now accepts nested-looking identity frames using the syntax:
+
+```text
+{{i :: ᚠ :: @1 :: ? :: !}}
+{{i :: ᚢ :: @1 :: ? :: !}}
+```
+
+- `{{i}}`: identity-bound interpreter frame.
+- Rune glyph: select one of 24 deterministic local vertex/stroke graphs.
+- `@n`: address an existing local rune vertex.
+- `>n`: travel only across an existing stroke edge.
+- `?`: append an observation.
+- `!`: append independent A/B/C witness provenance.
+- An invalid instruction produces a HOLD event and stops processing the frame stream.
+- The model keeps one BOX `||||`, no unvalidated cross-rune teleportation, and no physical quanta claim.
+
+The application is accessible as source at [one-box.html](./one-box.html); GitHub Pages requires deployment configuration.
