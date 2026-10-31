@@ -74,3 +74,7 @@ Pivot: One BOX `||||` contains a `/\\/` diamond-core identity watermark. [Run th
 
 ## RQT-052 — Capacitive fractal diamond, n^n replication
 The diamond watermark engine in [diamond-core.html](./diamond-core.html) now includes a bounded **physical in-memory replica** experiment with n^n complete copies for n=2…5 (4, 27, 256, 3,125). Any one intact, SHA-256-verified copy can restore the core; loss of all copies eliminates recovery from this set. The UI supports charging, losing one, losing half, losing all and recovering. Each action appends an observation to the session history. This n^n scaling is a chosen redundancy architecture, not an emergent mathematical guarantee of tamper resistance. Correlated failures can destroy every replica together. Replicas are session-local and are not currently included in the engine's JSON export. Durable cross-device replication, erasure coding and independent provenance signatures are future engineering requirements.
+
+## RQT-053 — ROOT0 / .dlw attribution standard
+
+Read [the new RQT-053 standard](./standards/RQT-053-DLW-DIAMOND.md). It follows the established `toph-cortex` .dlw schema and keeps attribution/provenance claims separate from cryptographic signatures, legal ownership, and third-party materials. The standard extends the n^n fractal diamond design with canonical hashes, the immutable `cubit` token, append-only predecessor references, and three independent nonvoting witness reports. Implementation tests have not yet been completed.
