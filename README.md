@@ -78,3 +78,7 @@ The diamond watermark engine in [diamond-core.html](./diamond-core.html) now inc
 ## RQT-053 — ROOT0 / .dlw attribution standard
 
 Read [the new RQT-053 standard](./standards/RQT-053-DLW-DIAMOND.md). It follows the established `toph-cortex` .dlw schema and keeps attribution/provenance claims separate from cryptographic signatures, legal ownership, and third-party materials. The standard extends the n^n fractal diamond design with canonical hashes, the immutable `cubit` token, append-only predecessor references, and three independent nonvoting witness reports. Implementation tests have not yet been completed.
+
+## RQT-054 — Coexistent roles
+
+The canonical three-part contract is: `.dlw` = moniker (attribution), `/\\/` = diamond fold (encapsulation and redundancy), `ENDER` = watermark (exact application identifier). These are separate but jointly bound into the diamond core, alongside `{{i}}` identity, `||||` BOX, and the immutable `cubit` constant. See [RQT-054 extension](./standards/RQT-053-DLW-DIAMOND.md) and [diamond-core.html](./diamond-core.html). The app now verifies all three core roles and the ENDER token digest; it does not treat a hash as a verified signature or an ownership judgment.
