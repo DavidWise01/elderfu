@@ -82,3 +82,7 @@ Read [the new RQT-053 standard](./standards/RQT-053-DLW-DIAMOND.md). It follows 
 ## RQT-054 — Coexistent roles
 
 The canonical three-part contract is: `.dlw` = moniker (attribution), `/\\/` = diamond fold (encapsulation and redundancy), `ENDER` = watermark (exact application identifier). These are separate but jointly bound into the diamond core, alongside `{{i}}` identity, `||||` BOX, and the immutable `cubit` constant. See [RQT-054 extension](./standards/RQT-053-DLW-DIAMOND.md) and [diamond-core.html](./diamond-core.html). The app now verifies all three core roles and the ENDER token digest; it does not treat a hash as a verified signature or an ownership judgment.
+
+## RQT-055 — Bubble-time reverse-fold blast zone
+
+A self-contained [blastzone.html](./blastzone.html) tests exact BigInt/rational encoding of seconds since the Unix epoch into model bubble light-crossing ticks, eight encapsulation layers, inverse decoding, and SHA-256 detection of intentional mutation. The tick is defined by the model-specific full bubble diameter `1.16158e-35 m` divided by `299792458 m/s`. This does not equate to measured atomic time, does not synchronize independent devices, and does not retrofit legacy signed-32-bit APIs. The executable desktop test report and test script were also created in this conversation; GitHub Pages deployment remains unverified.
