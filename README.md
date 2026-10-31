@@ -66,3 +66,7 @@ Single-BOX `{{i}}` program syntax: `{{i :: ᚠ :: @1 :: ? :: =>ᚢ@1 :: ? :: !}}
 ## RQT-050 — Authorized reverse transport
 
 The One BOX `{{i}}` language now supports `<=ᚠ@1` as a reverse operation for a prior explicit `=>` handoff. A forward handoff generates a one-use reverse authorization for its exact source and destination vertex pair. Unmatched reverse commands HOLD; successful reverse operations append new events and consume authorization. Example: `{{i :: ᚠ :: @1 :: =>ᚢ@1 :: ? :: <=ᚠ@1 :: !}}`. This demonstrates reversible location under a simple address model, not invertible physical transport, and does not erase earlier events.
+
+## RQT-051 — Diamond core watermark engine
+
+Pivot: One BOX `||||` contains a `/\\/` diamond-core identity watermark. [Run the engine](./diamond-core.html). Core binds `{{i}}` identity, rune sequence, payload and SHA-256 digests. Explicit nested wrappers form a forward hash chain and can be repeatedly added and removed; import/export and intentional tamper testing are supported. Observations append to a session-local event ledger. This guarantees neither preservation after arbitrary destructive transformations nor authorship authentication; use a trusted digital signature and external timestamp for those stronger claims. The detailed standalone prototype also exists as a conversation artifact. Previous rune transport labs remain available.
