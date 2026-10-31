@@ -62,3 +62,7 @@ The application is accessible as source at [one-box.html](./one-box.html); GitHu
 ## RQT-049 — Explicit inter-rune vertex handoff
 
 Single-BOX `{{i}}` program syntax: `{{i :: ᚠ :: @1 :: ? :: =>ᚢ@1 :: ? :: !}}`. The new `=>ᚢ@1` instruction declares a directed inter-rune handoff from the current source vertex to vertex 1 of rune ᚢ. Both endpoints must exist; invalid or degenerate bindings HOLD. Each successful handoff is logged as one event with exact source/destination addresses, still inside `||||`. Selecting a rune glyph alone is not a transport event. This is a defined software language, not a physical mechanism. The target page is `one-box.html`; live Pages access remains unverified.
+
+## RQT-050 — Authorized reverse transport
+
+The One BOX `{{i}}` language now supports `<=ᚠ@1` as a reverse operation for a prior explicit `=>` handoff. A forward handoff generates a one-use reverse authorization for its exact source and destination vertex pair. Unmatched reverse commands HOLD; successful reverse operations append new events and consume authorization. Example: `{{i :: ᚠ :: @1 :: =>ᚢ@1 :: ? :: <=ᚠ@1 :: !}}`. This demonstrates reversible location under a simple address model, not invertible physical transport, and does not erase earlier events.
