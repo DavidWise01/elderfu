@@ -32,3 +32,9 @@ Commit of index.html does not itself confirm that GitHub Pages is enabled. The c
 - App commit: cd604ba6c6251bc219b2d75173fd8a822807c38a.
 
 GitHub Pages availability has not been confirmed. If needed, enable Pages under Settings → Pages using main and /(root).
+
+## One BOX — Rune Vertex Transport Interpreter
+
+Open [one-box.html](./one-box.html) or the Pages address https://davidwise01.github.io/elderfu/one-box.html (when Pages is enabled).
+
+24 Elder Futhark symbols serve as language tokens and geometric transport graphs inside one containment BOX `||||`. Vertices are selectable addresses, strokes become legal graph edges, and each successful edge traversal creates an append-only witness event. Source supports selection, stepping, automatic transport, simple program interpretation, and JSON exports. No transport outside the BOX or through absent edges is permitted. This is an experimental computational model, not historical rune programming or physical quanta.
