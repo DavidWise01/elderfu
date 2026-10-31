@@ -122,3 +122,7 @@ Author correction: electrum is **part of** the traveling bubble, not the bubble 
 ## RQT-061 — First conditional occupancy test
 
 [Run the single-bubble walkthrough](./rqt-061.html). One original bubble expands while traveling through scale. Tested explicit inventories: empty, proton only, and proton+electron. Hydrogen ground-state reference diameter is twice the Bohr radius (~1.058e-10 m); 1e-10 m is slightly smaller, 1e-9 m accommodates that reference geometrically. Exact eight-check report is provided in the conversation as `rqt061-results.json`. The check verifies source accounting and geometric thresholds; it does not simulate capture, radiation, magnetic containment, actual matter synthesis, or a physically realized electrum field. Inputs beyond geometry are still needed.
+
+## RQT-062 — Particle motion inside one expanding bubble
+
+[Interactive motion simulation](./rqt-062.html) models a fixed proton and moving electron with softened classical Coulomb attraction and velocity-Verlet integration, plus a growing illustrated bubble radius. It exposes orbit, velocity-derived motion, classical energy and its relative numerical drift; an audit runs 100, 1,000 and 10,000 steps. The electrum component is reserved but has no magnetic field equation yet. The simulated bubble radius is visual and does not impart a force on the electron. A negative classical total energy does not establish stable quantum hydrogen, photon emission, or actual formation from initially separated free particles.
