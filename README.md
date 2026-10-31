@@ -20,3 +20,15 @@ For cycle-check matrix C and additive edge-error vector δ, the observed syndrom
 Repository Settings → Pages → Build and deployment → Deploy from a branch → **main** → **/(root)** → Save.
 
 Commit of index.html does not itself confirm that GitHub Pages is enabled. The connected GitHub API cannot configure Pages for this repository.
+
+
+## RQT-046 — Evidence-preserving reconstruction
+- Interactive section in index.html: Reconstruction Without History Rewrite.
+- For observed syndrome σ, seek a one-edge additive correction δ̂ satisfying Cδ̂ = σ.
+- A unique nonzero syndrome signature permits proposing a correction under the single-fault model; proportional signatures are ambiguous and held.
+- A zero corrected syndrome verifies the cycle checks only, not the truth of the proposed error cause.
+- Append derived observations; do not overwrite original witness reports. JSON session export available.
+- The fixture is four vertices and five edges; full 55,296-site validation is not claimed.
+- App commit: cd604ba6c6251bc219b2d75173fd8a822807c38a.
+
+GitHub Pages availability has not been confirmed. If needed, enable Pages under Settings → Pages using main and /(root).
