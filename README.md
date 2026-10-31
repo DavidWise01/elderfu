@@ -94,3 +94,7 @@ Source notation, intentionally unnormalized: `[3((n)^2))4]^{{N}}` and `1x1.61658
 ### RQT-056 correction — 2026-10-31
 
 Author correction to symbolic scale: **`1 × 1.61658 × 10^(-inf+1)`** (previously transcribed as `10^(-inf-1)`). Preserve this expression as symbolic notation; do not silently treat `inf` as a finite numeric exponent. For a finite index k standing in for `inf`, the corrected candidate family is `D(k)=1.61658 × 10^(1-k) m`, and `Δt(k)=D(k)/c`. Under the mathematical limit k→+∞ the diameter approaches zero; actual timestamp implementations must select an explicit finite resolution. This correction does not replace the earlier fixed-diameter RQT-055 blast-zone fixture.
+
+### RQT-056 clarification — +1 BUBBLE (supersedes exponent interpretation)
+
+Author clarification: **`+1` labels one complete bubble**, NOT arithmetic `+1` in the power-of-ten exponent. The previous interpretation `10^(-inf+1)` / `D(k)=1.61658×10^(1-k)` was incorrect and is superseded. Preserve the symbolic structure as **`1 × 1.61658 × 10^(-inf) :: +1 BUBBLE`** pending a formal definition of `inf` and numeric scale. This represents a bubble count of one, not an asserted finite numeric diameter. Model invariant: `bubble_count = 1`, `D_bubble = one full bubble length`, and `Δt = D_bubble/c` when D_bubble is defined as finite. The fixed numerical RQT-055 blast-zone fixture remains an independent test, not an automatic implementation of the symbolic infinite-scale expression.
