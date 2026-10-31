@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ELDERFU RQT-055: BLAST ZONE</title><style>body{margin:0;background:#06111d;color:#dcfaf4;font:15px/1.6 ui-monospace,monospace}main{max-width:990px;margin:auto;padding:30px}h1{color:#59e8d8}section{border:1px solid #327181;border-radius:12px;background:#0d2030;padding:20px;margin:20px 0}button,input{padding:12px;background:#142e44;border:1px solid #62cbc7;color:white;border-radius:8px;font:inherit}button{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#60ebdb}.pass{color:#87fbc4}.fail{color:#ffc18d}</style><main><h1>{ )(///\ · BLAST ZONE</h1><p>RQT-055 · Exact binary-free rational time codec · reversed diamond fold · fault containment</p><section><h2>Parameters</h2><p>Epoch: Unix UTC 1970-01-01T00:00:00Z. Model bubble diameter: 1.16158 × 10⁻³⁵ m. Tick = diameter / 299792458 m/s. This is a computational convention, not an atomic or physical Planck clock.</p><label>UTC seconds since Unix epoch <input id="seconds" value="2147483648" pattern="-?[0-9]+"></label><p><button id="run">ENCODE / FOLD / REVERSE / VERIFY</button> <button id="test">RUN BOUNDARY + FAULT TESTS</button></p><pre id="result"></pre></section><section><h2>Test principles</h2><pre>1. N = floor(seconds / tick) with BigInt integer division.
+2. remainder = exact rational, 0 ≤ remainder &lt; tick.
+3. Wrap 8 nested envelopes, then reverse ) ( / / / \.
+4. Recover exact integer seconds with no loss.
+5. Hash canonical encoded payload; flip an encoded bit;
+   detect difference by digest mismatch.
+6. Failure must be reported, never healed by guessing.</pre></section><p><a href="./diamond-core.html">Diamond core</a> · <a href="./index.html">ELDERFU</a></p><script>
+const $=id=>document.getElementById(id);
+const gcd=(a,b)=>{while(b){[a,b]=[b,a%b]}return a<0n?-a:a};
+function rational(a,b){if(b<0n){a=-a;b=-b}const g=gcd(a,b);return [a/g,b/g]}
+const tick=rational(116158n,10n**40n*299792458n);
+function divFloor(a,b){let q=a/b;return a%b<0n?q-1n:q}
+function encode(sec){const num=sec*tick[1],n=divFloor(num,tick[0]),rem=rational(num-n*tick[0],tick[1]);return {N:String(n),remainder:[String(rem[0]),String(rem[1])],epoch:'1970-01-01T00:00:00Z',bubble_m:'1.16158e-35',mark:'ENDER',moniker:'.dlw',fold:'/\\/',constant:'cubit'}}
+function wrap(core){let value=core;for(let i=0;i<8;i++)value={fold:i,payload:value};return value}
+function unwrap(value){for(let i=7;i>=0;i--){if(value.fold!==i)throw Error('broken fold at '+i);value=value.payload}return value}
+function decode(core){if(core.epoch!=='1970-01-01T00:00:00Z'||core.bubble_m!=='1.16158e-35'||core.mark!=='ENDER'||core.moniker!=='.dlw'||core.fold!=='/\\/'||core.constant!=='cubit')throw Error('core contract mismatch');const N=BigInt(core.N),a=BigInt(core.remainder[0]),b=BigInt(core.remainder[1]);if(b<=0n||a<0n||a*tick[1]>=b*tick[0])throw Error('invalid remainder');const num=N*tick[0]*b+a*tick[1],den=tick[1]*b;if(num%den!==0n)throw Error('not an integral UTC second');return num/den}
+async function digest(obj){const encoded=new TextEncoder().encode(JSON.stringify(obj));return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',encoded)),v=>v.toString(16).padStart(2,'0')).join('')}
+async function testOne(seconds){const core=encode(seconds),container=wrap(core),decoded=decode(unwrap(container)),before=await digest(container);let corrupted=JSON.parse(JSON.stringify(container));let inner=unwrap(corrupted);inner.N=String(BigInt(inner.N)+1n);const after=await digest(corrupted);return {input:String(seconds),digits:core.N.length,roundtrip:decoded===seconds,hashMutationDetected:before!==after,corruptionRejected:(()=>{try{return decode(unwrap(corrupted))!==seconds}catch(e){return true}})()}}
+$('run').onclick=async()=>{try{const s=BigInt($('seconds').value.trim());$('result').textContent=JSON.stringify(await testOne(s),null,2)}catch(e){$('result').textContent='ERROR '+e.message}};
+$('test').onclick=async()=>{const vals=[946684799n,946684800n,2147483647n,2147483648n,4102444800n,16725225600n,-1n];const out=await Promise.all(vals.map(testOne));$('result').textContent=out.map(x=>(x.roundtrip&&x.hashMutationDetected&&x.corruptionRejected?'PASS':'FAIL')+' '+JSON.stringify(x)).join('\n')};
+$('test').click();
+</script></main></html>
