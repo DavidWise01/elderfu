@@ -58,3 +58,7 @@ The One BOX interpreter at [one-box.html](./one-box.html) now accepts nested-loo
 - The model keeps one BOX `||||`, no unvalidated cross-rune teleportation, and no physical quanta claim.
 
 The application is accessible as source at [one-box.html](./one-box.html); GitHub Pages requires deployment configuration.
+
+## RQT-049 — Explicit inter-rune vertex handoff
+
+Single-BOX `{{i}}` program syntax: `{{i :: ᚠ :: @1 :: ? :: =>ᚢ@1 :: ? :: !}}`. The new `=>ᚢ@1` instruction declares a directed inter-rune handoff from the current source vertex to vertex 1 of rune ᚢ. Both endpoints must exist; invalid or degenerate bindings HOLD. Each successful handoff is logged as one event with exact source/destination addresses, still inside `||||`. Selecting a rune glyph alone is not a transport event. This is a defined software language, not a physical mechanism. The target page is `one-box.html`; live Pages access remains unverified.
