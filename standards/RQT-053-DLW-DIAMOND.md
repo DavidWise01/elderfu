@@ -73,3 +73,35 @@ Where source records differ (e.g., TriPod LLC, Bridge-Burners LLC, different lic
 
 ## Current validation
 This document is a specification, not a claim that all gates have been executed or that every DavidWise01 repository has been audited.
+
+## RQT-054 — Coexistent three-role composition (2026-10-31)
+This section extends the attribution standard; it does not supersede the original corpus-spine .dlw contract.
+
+**Canonical design:**
+- MONIKER = `.dlw` (the attributed provenance name/marker; do not confuse it with a cryptographic signature).
+- FOLD = `/\\/` (the diamond's nested, capacitive, recoverable encapsulation topology).
+- WATERMARK = `ENDER` (the exact application-level watermark identifier and content-bound identifier, separately digested).
+- CONTAINER = `||||`, IDENTITY = `{{i}}`, CONSTANT = `cubit` (case-sensitive).
+
+The three roles coexist in every recoverable core and can be verified independently. Neither `ENDER` nor its suggested mnemonic is asserted to be a historical Elder Futhark translation.
+
+A valid recovery preserves `.dlw`, `/\\/`, and `ENDER` byte-for-byte and verifies their separate bindings to the same immutable core. The root .dlw event format remains `.dlw:<64 lowercase hex>` and remains attribution of the provenance container only.
+
+Representative data envelope (not a drop-in corpus-spine v2 record):
+```json
+{
+  "schema": "elderfu.diamond-roles/1",
+  "moniker": ".dlw",
+  "fold": "/\\/",
+  "watermark": "ENDER",
+  "identity": "{{i}}",
+  "box": "||||",
+  "constant": "cubit",
+  "attribution_claim": "David Lee Wise",
+  "provenance_scope": "PROVENANCE_CONTAINER_ONLY",
+  "watermark_digest": "<SHA-256 of exact UTF-8 watermark token>",
+  "core_digest": "<SHA-256 of canonical core>",
+  "replicas": "<n^n actual complete replicas; not a virtual claim>"
+}
+```
+**Acceptance:** changing any role must fail verification; surviving complete replicas restore every role; history appends without rewriting prior records. A hash alone does not authenticate authorship.
