@@ -146,3 +146,7 @@ Author correction: electrum is **part of** the traveling bubble, not the bubble 
 ## RQT-067 — Electromagnetic energy ledger
 
 [Run RQT-067](./rqt-067.html). For prescribed uniform internal field and spherical volume, U_B=B²(4πR³/3)/(2μ₀). With B=B0(R0/R)², U_B R = U_B0 R0 is an algebraic model invariant. The lab extends the Faraday induction simulation with field energy and a residual 'externalWorkRequired = ΔE_particle + ΔU_B'. This external work is **inferred from the ledger**, not independently solved; it cannot constitute a nontrivial closed-system energy-conservation test. A self-consistent Maxwell boundary, field stresses, source work, and radiation are still missing. Results require runtime verification.
+
+## RQT-068 — Magnetic stress and expansion-work boundary
+
+[Interactive laboratory](./rqt-068.html) compares an *assumed isotropic effective* pressure `p_eff=−dU_B/dV=u_B/3` with the local magnetic energy density `u_B=B²/(2μ₀)` under the imposed B∝R⁻² law and spherical volume. Numerically checks U_B R invariance at R/R0=1,2,4,10. Using u_B as uniform pressure produces three times the effective integrated expansion work: this marks an invalid substitution, not demonstrated energy creation. Real Maxwell stress tensor is anisotropic, `T_ij=(B_i B_j−½δ_ij B²)/μ₀`; a self-consistent magnetic bubble requires external fields, boundary/surface currents and force balance. The pressure result derives from the imposed energy law and is not an independent physical expansion mechanism. Browser checks not yet independently executed.
