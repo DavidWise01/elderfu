@@ -181,3 +181,7 @@ All elementary particles are represented as excitations of fields, not as indepe
 ## RQT-075 — Field excitation dispersion versus imposed confinement
 
 [ASCII and interactive analytical laboratory](./rqt-075.html) tests one prescribed expanding bubble `R(t)=R0+ut`, using a 1D nonrelativistic Gaussian Schrödinger packet as a surrogate for a localized excitation. Free packet width `σ(t)=σ0 sqrt(1+(ℏt/(2mσ0²))²)` versus an *externally imposed* stationary harmonic trap width σ0; probability inside [-R,R] is `erf(R/(sqrt(2)σ))`. Parameters: R0=3a0, σ0=a0/2, u=2e5 m/s, t=2e-16 s. Analytic result: free packet width ~16.57× initial, while confining reference width is constant. No real electrum trapping mechanism or self-consistent bubble field is established. Four-interface W/M/S/N routing and full ASCII standard preserved. Frozen RQT-068 untouched.
+
+## RQT-077 — Odd/even B/T zipper nesting and reversible transport
+
+[Run ASCII interactive zipper test](./rqt-077.html). Author layout: B/T top-left and bottom-left; center `{{n}}`; top-right `{{n²-1}}` odd; bottom-right `{{n²}}` even, for even n. Cases n=2,4,6,8 yield 3/4, 15/16, 35/36, 63/64. Nested symbolic wrappers `B(T(B(T({{n}}))))` are added and removed reversibly without modifying center or paired values. All parity and round-trip identities follow algebraically; this is a logical transport model, not verified molecular DNA or chemical dynamics or a Hodge ring isomorphism. Full ASCII included per standard; frozen RQT-068 unchanged.
