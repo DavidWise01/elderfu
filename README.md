@@ -249,3 +249,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-089 — Hodge caliper: two independent period probes
 
 [Interactive test](./rqt-089.html) on X=CP1×CP1 with H^2 basis a,b, a²=b²=0 and integral(a b)=1. If alpha=p a+q b, intersection pairings are integral(alpha a)=q and integral(alpha b)=p. Hence p and q are reconstructed, and alpha is class of p(point×CP1)+q(CP1×point) given conventional Poincaré dual bases. Code tests 361 integer pairs. This is a known elementary case, not proof of the full Hodge conjecture. Full ASCII and original brace=Waldo, box=space, toroid=state nesting retained; freeze RQT-068 unchanged.
+
+## RQT-090 — Blind Hodge caliper, rational reconstruction
+
+[Interactive full-ASCII test](./rqt-090.html). On X=CP1×CP1 with a²=b²=0 and ∫ab=1, seeded hidden rational class alpha=p a+q b is reconstructed solely from ∫alpha a=q and ∫alpha b=p. Exact normalized fractions; a 100-seed programmatic audit button; three independent conceptual witness reports for measurement, reconstruction, verification (not voting/quorum). Construction of rational linear combinations of algebraic fibers is a known case of Hodge and not a general result. `{[(i)]}` retains brace=Waldo, box=space, toroid=state; sub-Planck claims are unrelated to this proof. Frozen RQT-068 untouched.
