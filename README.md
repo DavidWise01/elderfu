@@ -185,3 +185,7 @@ All elementary particles are represented as excitations of fields, not as indepe
 ## RQT-077 — Odd/even B/T zipper nesting and reversible transport
 
 [Run ASCII interactive zipper test](./rqt-077.html). Author layout: B/T top-left and bottom-left; center `{{n}}`; top-right `{{n²-1}}` odd; bottom-right `{{n²}}` even, for even n. Cases n=2,4,6,8 yield 3/4, 15/16, 35/36, 63/64. Nested symbolic wrappers `B(T(B(T({{n}}))))` are added and removed reversibly without modifying center or paired values. All parity and round-trip identities follow algebraically; this is a logical transport model, not verified molecular DNA or chemical dynamics or a Hodge ring isomorphism. Full ASCII included per standard; frozen RQT-068 unchanged.
+
+## RQT-080 — Gravity-curvature scaling comparison
+
+[Full ASCII interactive test](./rqt-080.html) compares the author expression `C(n)=pi*sqrt(n)/1.616158` against Schwarzschild invariant curvature `K(r)=48 G² M²/(c⁴r⁶)` for fixed M and explicitly assumed `n=r/r0`. C/C1 grows as sqrt(n); K/K1 falls as n^-6. The comparison rejects identification of the two quantities under this n interpretation, not other possible meanings of n. C has unspecified physical dimensions and is not a validated gravitational curvature equation. Frozen RQT-068 untouched.
