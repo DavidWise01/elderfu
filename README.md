@@ -201,3 +201,7 @@ Preserve author working expression `q = sqrt(6)/(2*pi*L0)` with `L0 = 1.61658e-3
 ## RQT-083 — Sphere curvature and Gauss–Bonnet consistency
 
 Using the author working length L0=1.61658e-35 m and q=sqrt(6)/(2*pi*L0), take the explicitly *constructed* 2-sphere radius R=1/q=4.1466888088861324e-35 m. Gaussian curvature K=1/R²=q²=5.815634586223639e68 m^-2; intrinsic scalar curvature S=2K=1.1631269172447278e69 m^-2; area=4*pi*R²=2.1607909554921158e-68 m²; integrated Gaussian curvature K*A=4*pi; Euler characteristic (1/(2*pi))*integral=2. These identities pass analytically and numerically; they follow from the chosen sphere and are not a prediction of a gravitational field. Distinguish intrinsic 2D geometry, extrinsic embedding, and 4D Lorentzian spacetime curvature. No physical measurement or Einstein equation solved. Full ASCII displayed in conversation. RQT-068 frozen branch preserved.
+
+## RQT-084 — Planck foam / bubble topology test
+
+[Full-ASCII executable test](./rqt-084.html). Author-defined sub-Planck foam substrate below 10^-35m contrasted with one expanding referent bubble. A tetrahedral sphere mesh V-E+F=4-6+4=2 and 3x3 periodic torus cell mesh V-E+F=9-18+9=0. Same literal `{{i}}` can be transported between B/T containers without loss of *symbolic* identity. Distinct Euler characteristics prohibit a topology-preserving homeomorphism of sphere and torus. This does not establish actual foam, spontaneous emergence, or physically possible topology change. Preserves RQT-068 reference freeze and ASCII-every-boundary convention.
