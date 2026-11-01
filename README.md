@@ -241,3 +241,7 @@ Prior RQT-084 sphere-vs-torus Euler-characteristic check remains valid as a math
 ## RQT-087 — Hodge-first research scope correction
 
 User confirms `{[(i)]}` Waldo/space/state language is being developed **for the Hodge Conjecture**. Future tests must prioritize finding algebraic cycles representing rational Hodge classes, not generic coordinate reversible transport. Proposed first discovery benchmark: X=CP1×CP1, unknown coefficients for alpha=5a+7b to be recovered from intersection pairings with known basis classes. Intersection with a returns 7, intersection with b returns 5 because a²=b²=0 and ab=[point]. Recover alpha=5a+7b and verify exact class equality. This is a known low-codimension example, not a general proof. Keep full ASCII every bound; preserve frozen RQT-068.
+
+## RQT-088 — Recursive Hodge nesting, author correction
+
+Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels h > h2 > h3 extend recursively without a fixed symbolic stop. Box `[ ]` denotes space; toroid `( )` denotes state; brace `{ }` denotes Waldo manipulation; `i` preserves the referent. Recursive level labels `h2`, `h3` must NOT be confused with cup products `h^2`, `h^3` without an explicit interpretation map. For CP^m, H*(CP^m;Q)=Q[h]/(h^(m+1)), so h^k nonzero for 0<=k<=m and h^(m+1)=0. The nested language is a proposed encoding, not an established proof of the general Hodge conjecture. Test targets: CP² h² !=0,h³=0; CP³ h³ !=0,h⁴=0, and whether mapping preserves multiplication and cycle class. Frozen RQT-068 unchanged.
