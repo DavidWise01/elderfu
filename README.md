@@ -237,3 +237,7 @@ Prior RQT-084 sphere-vs-torus Euler-characteristic check remains valid as a math
 ## RQT-086 — Waldo reversible state operations
 
 [Interactive ASCII test](./rqt-086.html) preserves `{ [ ( i ) ] }` semantics: brace/Waldo manipulation, box/space, toroid/state. A reversible state vector translation `(x,y)->(x+2,y-3)` and its inverse are tested over 81 integer pairs while referent and box address remain unchanged. Noninvertible collapse and mismatched identity are marked disallowed conceptual cases; the live script exposes the identity mismatch boolean but is not an independent authorization framework. This is structural software logic, not physical topology change. Frozen RQT-068 untouched.
+
+## RQT-087 — Hodge-first research scope correction
+
+User confirms `{[(i)]}` Waldo/space/state language is being developed **for the Hodge Conjecture**. Future tests must prioritize finding algebraic cycles representing rational Hodge classes, not generic coordinate reversible transport. Proposed first discovery benchmark: X=CP1×CP1, unknown coefficients for alpha=5a+7b to be recovered from intersection pairings with known basis classes. Intersection with a returns 7, intersection with b returns 5 because a²=b²=0 and ab=[point]. Recover alpha=5a+7b and verify exact class equality. This is a known low-codimension example, not a general proof. Keep full ASCII every bound; preserve frozen RQT-068.
