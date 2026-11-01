@@ -189,3 +189,7 @@ All elementary particles are represented as excitations of fields, not as indepe
 ## RQT-080 — Gravity-curvature scaling comparison
 
 [Full ASCII interactive test](./rqt-080.html) compares the author expression `C(n)=pi*sqrt(n)/1.616158` against Schwarzschild invariant curvature `K(r)=48 G² M²/(c⁴r⁶)` for fixed M and explicitly assumed `n=r/r0`. C/C1 grows as sqrt(n); K/K1 falls as n^-6. The comparison rejects identification of the two quantities under this n interpretation, not other possible meanings of n. C has unspecified physical dimensions and is not a validated gravitational curvature equation. Frozen RQT-068 untouched.
+
+## RQT-081 — Numeric gravity referent correction
+
+Author supplies `sqrt6/1.61658x10^-35/2pi`. Under the explicitly stated interpretation `sqrt(6)/(1.61658e-35 * 2*pi)` the result is `2.41156268552647e34 m^-1` if the denominator's 1.61658e-35 carries meters. Its reciprocal length is `4.1466888088861324e-35 m`. This is inverse length, not established scalar spacetime curvature; further mapping to a metric or invariant is required. Alternative left-associative parsing differs, so parentheses are needed. RQT-068 freeze unchanged. Full ASCII in conversation.
