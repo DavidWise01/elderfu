@@ -169,3 +169,7 @@ Author supplies `inner/inner :: inner/outer :: outer/inner :: outer/outer :: ([[
 ## RQT-072 — Charge and three-axis momentum transfer
 
 [Run RQT-072](./rqt-072.html). Four interfaces II / IO / OI / OO exchange symbolic conserved E, N, signed Q and vector P=(Px,Py,Pz) between adjacent source/destination regions, with A/source B/destination C/global independent witnesses, no quorum. Integer-ledger audit exercises six accepted and two rejected transfers and exact total preservation. This is structural bookkeeping; physical charge-current/field momentum and realistic force laws remain unspecified. Explicit author requirement: **draw full ASCII for every subsequent natural boundary**, including in the GitHub page and assistant response, recorded in [standards/ASCII-EVERY-BOUNDARY.md](./standards/ASCII-EVERY-BOUNDARY.md). Preserves earlier RQT-068 freeze.
+
+## RQT-073 — Particle, field, and bubble recoil momentum
+
+[Interactive lab and full ASCII](./rqt-073.html). Splits specified vector impulse among particle, electromagnetic field and bubble boundary so their sum remains zero in all x/y/z axes. An audit exercises 15 accepted axis/fraction examples plus one invalid-share rejection. This is ledger conservation by construction, not an independent Lorentz/Maxwell field calculation. Electromagnetic momentum density in vacuum is `g=ε0(E×B)=S/c²`; self-consistent field and stress-boundary flux remain future work. Standard [ASCII every boundary](./standards/ASCII-EVERY-BOUNDARY.md) followed. Frozen RQT-068 branch unchanged.
