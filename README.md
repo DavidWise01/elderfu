@@ -205,3 +205,31 @@ Using the author working length L0=1.61658e-35 m and q=sqrt(6)/(2*pi*L0), take t
 ## RQT-084 — Planck foam / bubble topology test
 
 [Full-ASCII executable test](./rqt-084.html). Author-defined sub-Planck foam substrate below 10^-35m contrasted with one expanding referent bubble. A tetrahedral sphere mesh V-E+F=4-6+4=2 and 3x3 periodic torus cell mesh V-E+F=9-18+9=0. Same literal `{{i}}` can be transported between B/T containers without loss of *symbolic* identity. Distinct Euler characteristics prohibit a topology-preserving homeomorphism of sphere and torus. This does not establish actual foam, spontaneous emergence, or physically possible topology change. Preserves RQT-068 reference freeze and ASCII-every-boundary convention.
+
+## RQT-085 — Canonical nested operator correction: brace / box / toroid
+
+Author correction (overrides any implication that B and T are interchangeable surface shapes): canonical nesting is `{ [ ( i ) ] }`, written `{[(i)]}`:
+- `{ ... }` BRACE = **Waldo manipulation / operator**.
+- `[ ... ]` BOX = **space / containment**.
+- `( ... )` TOROID = **state**.
+- `i` = central referent / identity; `{{i}}` remains the project's separate identity-carrier notation where applicable.
+
+```text
+|||| {{i :: RQT-085 :: NESTED DIALECT}} ||||
+
+   {   WALDO / MANIPULATION
+       [   SPACE / BOX
+           (   STATE / TOROID
+                   i
+           )   STATE
+       ]   SPACE
+   }   WALDO
+
+       { [ ( i ) ] }
+
+  OPERATE { }  -> LOCATE [ ] -> STATE ( )
+  DO NOT CONFUSE WRAPPERS WITH HOMEOMORPHISMS
+|||| .dlw / /\\/ / ENDER / cubit ||||
+```
+
+Prior RQT-084 sphere-vs-torus Euler-characteristic check remains valid as a mathematical comparison but **does not describe a mandatory geometry switch** in the author-defined nested syntax. No physical topology-change operation is implied by evaluating the nesting. This correction is append-only; frozen RQT-068 branch unchanged.
