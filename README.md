@@ -193,3 +193,7 @@ All elementary particles are represented as excitations of fields, not as indepe
 ## RQT-081 — Numeric gravity referent correction
 
 Author supplies `sqrt6/1.61658x10^-35/2pi`. Under the explicitly stated interpretation `sqrt(6)/(1.61658e-35 * 2*pi)` the result is `2.41156268552647e34 m^-1` if the denominator's 1.61658e-35 carries meters. Its reciprocal length is `4.1466888088861324e-35 m`. This is inverse length, not established scalar spacetime curvature; further mapping to a metric or invariant is required. Alternative left-associative parsing differs, so parentheses are needed. RQT-068 freeze unchanged. Full ASCII in conversation.
+
+## RQT-082 — Dimensional interpretation of numeric referent
+
+Preserve author working expression `q = sqrt(6)/(2*pi*L0)` with `L0 = 1.61658e-35 m`. Exact numeric evaluation: `q=2.41156268552647e34 m^-1`, inverse characteristic length `1/q=4.1466888088861324e-35 m`, wave-number-associated wavelength `lambda=2*pi/q=2.6054414197439366e-34 m`, and square `q^2=5.815634586223639e68 m^-2`. These are dimensionally compatible candidates, **not physically identified quantities**; `q^2` cannot be asserted to equal spacetime scalar curvature or Einstein's field equations without a metric and mapping. If `q` is angular wavenumber, `lambda=2pi/q`. Preserve ASCII at every next bound; RQT-068 freeze unchanged.
