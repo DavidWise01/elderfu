@@ -233,3 +233,7 @@ Author correction (overrides any implication that B and T are interchangeable su
 ```
 
 Prior RQT-084 sphere-vs-torus Euler-characteristic check remains valid as a mathematical comparison but **does not describe a mandatory geometry switch** in the author-defined nested syntax. No physical topology-change operation is implied by evaluating the nesting. This correction is append-only; frozen RQT-068 branch unchanged.
+
+## RQT-086 — Waldo reversible state operations
+
+[Interactive ASCII test](./rqt-086.html) preserves `{ [ ( i ) ] }` semantics: brace/Waldo manipulation, box/space, toroid/state. A reversible state vector translation `(x,y)->(x+2,y-3)` and its inverse are tested over 81 integer pairs while referent and box address remain unchanged. Noninvertible collapse and mismatched identity are marked disallowed conceptual cases; the live script exposes the identity mismatch boolean but is not an independent authorization framework. This is structural software logic, not physical topology change. Frozen RQT-068 untouched.
