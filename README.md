@@ -245,3 +245,7 @@ User confirms `{[(i)]}` Waldo/space/state language is being developed **for the 
 ## RQT-088 — Recursive Hodge nesting, author correction
 
 Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels h > h2 > h3 extend recursively without a fixed symbolic stop. Box `[ ]` denotes space; toroid `( )` denotes state; brace `{ }` denotes Waldo manipulation; `i` preserves the referent. Recursive level labels `h2`, `h3` must NOT be confused with cup products `h^2`, `h^3` without an explicit interpretation map. For CP^m, H*(CP^m;Q)=Q[h]/(h^(m+1)), so h^k nonzero for 0<=k<=m and h^(m+1)=0. The nested language is a proposed encoding, not an established proof of the general Hodge conjecture. Test targets: CP² h² !=0,h³=0; CP³ h³ !=0,h⁴=0, and whether mapping preserves multiplication and cycle class. Frozen RQT-068 unchanged.
+
+## RQT-089 — Hodge caliper: two independent period probes
+
+[Interactive test](./rqt-089.html) on X=CP1×CP1 with H^2 basis a,b, a²=b²=0 and integral(a b)=1. If alpha=p a+q b, intersection pairings are integral(alpha a)=q and integral(alpha b)=p. Hence p and q are reconstructed, and alpha is class of p(point×CP1)+q(CP1×point) given conventional Poincaré dual bases. Code tests 361 integer pairs. This is a known elementary case, not proof of the full Hodge conjecture. Full ASCII and original brace=Waldo, box=space, toroid=state nesting retained; freeze RQT-068 unchanged.
