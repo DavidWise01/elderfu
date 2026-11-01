@@ -157,3 +157,7 @@ Author correction: electrum is **part of** the traveling bubble, not the bubble 
 
 ### Development chain
 RQT-058 geometric scale samples → RQT-059/060 single traveling bubble and electrum-component correction → RQT-061 conditional particle occupancy → RQT-062 Coulomb motion → RQT-063 moving reflective boundary → RQT-064 Lorentz/Boris magnetic motion → RQT-065 imposed flux dilution → RQT-066 Faraday-induced E → RQT-067 energy ledger → RQT-068 pressure vs anisotropic stress (frozen) → RQT-069 directional surface balance (current).
+
+## RQT-070 — Four-interface 4×4/3×3 lattice (post-freeze)
+
+Author supplies `inner/inner :: inner/outer :: outer/inner :: outer/outer :: ([[4x4]]^4)^{{3x3}}^3` with four force channels `weak, medium, strong, nuclear`. [Interactive structural lab](./rqt-070.html) preserves exact syntax and names. An **illustrative tensor-product interpretation** computes `16^4=65,536`, `9^3=729`, `65,536×729=47,775,744` address pairs; this is NOT an equivalence to the literal nested exponent operator without author definition. Four interfaces × four force channels produce 16 unique symbolic mappings. Medium has no standard force-law identification. Nuclear may name a residual nuclear interaction but is not treated as a fundamental interaction independent of the strong force without definition. Electrum remains one bubble component, not the whole bubble. This structural address test neither predicts field forces nor resolves Maxwell boundary stresses; RQT-068 frozen branch is unmodified.
