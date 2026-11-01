@@ -142,3 +142,7 @@ Author correction: electrum is **part of** the traveling bubble, not the bubble 
 ## RQT-066 — Faraday-induced electric field during bubble growth
 
 [Interactive RQT-066 experiment](./rqt-066.html): three modes (static B, diluted B without induction as a deliberately incomplete control, and diluted B with a Faraday-induced azimuthal electric field). For prescribed spatially uniform interior B(t)=B0(R0/R)^2, dB/dt=-2Bu/R and Ephi=-r/2 dB/dt. A Coulomb+Boris orbit integrates electron velocity and tracks electric work q∫E·v dt against its mechanical-energy change. The in-browser audit runs 15,000 steps in each mode. Important limitation: this is a prescribed *local* field, not a self-consistent finite-bubble Maxwell solution; its external source energy and radiation are omitted. The numerical outcomes are not yet independently verified.
+
+## RQT-067 — Electromagnetic energy ledger
+
+[Run RQT-067](./rqt-067.html). For prescribed uniform internal field and spherical volume, U_B=B²(4πR³/3)/(2μ₀). With B=B0(R0/R)², U_B R = U_B0 R0 is an algebraic model invariant. The lab extends the Faraday induction simulation with field energy and a residual 'externalWorkRequired = ΔE_particle + ΔU_B'. This external work is **inferred from the ledger**, not independently solved; it cannot constitute a nontrivial closed-system energy-conservation test. A self-consistent Maxwell boundary, field stresses, source work, and radiation are still missing. Results require runtime verification.
