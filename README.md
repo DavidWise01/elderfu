@@ -277,3 +277,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-096 — Explicit algebraic Lefschetz inverse on CP¹×CP¹
 
 [Exact executable audit](./rqt-096.py) · [Full ASCII proof-boundary record](./rqt-096.md). On S=CP¹×CP¹ with L=a+b, L²(1)=2ab, construct rational algebraic correspondence (1/2)[S×S], acting on H⁴(S)→H⁰(S) by integration to invert L². Exactly verified on three rational inputs with Python Fraction. This illustrates only the top-degree inverse on one known surface. STOP on an unprovided construction for arbitrary X; this does not settle the Lefschetz standard conjecture or Hodge conjecture. Preserve `{{ i + h }}`, `{[(i)]}`, three witnesses, no quorum, RQT-068 freeze.
+
+## RQT-097 — Lefschetz lowering as algebraic correspondence
+
+[Exact executable test](./rqt-097.py) · [Full ASCII and certificate](./rqt-097.md). For S=CP¹×CP¹ and L=a+b, the codimension-one cycle Z=pr1*L+pr2*L on S×S induces the lowering operator Λ: H⁴→H²→H⁰ with Λ(ab)=L, Λ(a)=Λ(b)=1, Λ(1)=0. Algebraic diagonal represents identity; (S×S)/2 inverts L²:H⁰→H⁴. This passes as a known surface case. The universal algebraic correspondence for arbitrary X remains unavailable: STOP, not disproof. Maintain `{{ i + h }}` and ASCII-every-boundary; frozen RQT-068 unchanged.
