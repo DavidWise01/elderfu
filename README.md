@@ -281,3 +281,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-097 — Lefschetz lowering as algebraic correspondence
 
 [Exact executable test](./rqt-097.py) · [Full ASCII and certificate](./rqt-097.md). For S=CP¹×CP¹ and L=a+b, the codimension-one cycle Z=pr1*L+pr2*L on S×S induces the lowering operator Λ: H⁴→H²→H⁰ with Λ(ab)=L, Λ(a)=Λ(b)=1, Λ(1)=0. Algebraic diagonal represents identity; (S×S)/2 inverts L²:H⁰→H⁴. This passes as a known surface case. The universal algebraic correspondence for arbitrary X remains unavailable: STOP, not disproof. Maintain `{{ i + h }}` and ASCII-every-boundary; frozen RQT-068 unchanged.
+
+## RQT-098 — Quartic K3 primitive projection
+
+[Exact Python audit](./rqt-098.py) · [Full ASCII and fail-stop](./rqt-098.md). On a smooth quartic K3 S with h²=4, the rational algebraic correspondence P=[Δ_S]-(1/4)pr1*h·pr2*h acts on H² as x↦x−(x·h/4)h, is idempotent, kills h and fixes primitive vectors. Independently executed 4/4 exact rational cases PASS. STOP at missing construction/certificate for arbitrary rational (2,2) Hodge class on S×S; not a counterexample, not a proof of universal Hodge. Freeze RQT-068 untouched.
