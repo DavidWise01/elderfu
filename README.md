@@ -257,3 +257,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-091 — Codimension-two rational Hodge caliper
 
 [Full ASCII exact symbolic interactive test](./rqt-091.html) for X=CP²×CP², H*(X,Q)=Q[a,b]/(a³,b³). An unknown alpha=p a²+q ab+r b² yields intersection vector (r,q,p) with a²,ab,b². Matrix [[0,0,1],[0,1,0],[1,0,0]] has determinant -1 and exact inverse itself, reconstructing p,q,r. Their geometric representatives are p(point×CP²)+q(line×line)+r(CP²×point). Code exposes deterministic seeded tests and 100-case audit, not independently browser-verified. This entire class of examples has algebraic generators and does not resolve the Hodge conjecture for arbitrary varieties. Original `{[(i)]}` semantics and ASCII at each bound; frozen RQT-068 unaffected.
+
+## RQT-092 — {{ i + h }} Hodge conjecture FAIL-STOP
+
+[Interactive fail-stop](./rqt-092.html) · [ASCII / proof obligations](./rqt-092.md). Arbitrary smooth complex projective X; rational Künneth component h of the algebraic diagonal in Y=X×X. Conditioned on X being smooth projective, input/category, rationality, Hodge type pass by known Hodge/Künneth properties. Halt at missing independently verified codimension-d algebraic cycle whose class equals h. Later verification and universal proof gates not executed. A halt is not disproof; the total diagonal being algebraic is insufficient to establish its individual components are algebraic cycles. Preserve three witnesses, no quorum, immutable RQT-068 freeze.
