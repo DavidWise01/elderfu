@@ -285,3 +285,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-098 — Quartic K3 primitive projection
 
 [Exact Python audit](./rqt-098.py) · [Full ASCII and fail-stop](./rqt-098.md). On a smooth quartic K3 S with h²=4, the rational algebraic correspondence P=[Δ_S]-(1/4)pr1*h·pr2*h acts on H² as x↦x−(x·h/4)h, is idempotent, kills h and fixes primitive vectors. Independently executed 4/4 exact rational cases PASS. STOP at missing construction/certificate for arbitrary rational (2,2) Hodge class on S×S; not a counterexample, not a proof of universal Hodge. Freeze RQT-068 untouched.
+
+## RQT-099 — Hodge-type gate before K3 tensor cycle search
+
+[Reproducible script](./rqt-099.py) · [Full ASCII and fail-stop](./rqt-099.md). An abstract rank-two K3-type period plane has omega=e1+i e2. A rational endomorphism M=[[a,b],[c,d]] preserves the Hodge decomposition iff a=d and c=-b. Python exact checks: identity PASS, quarter-turn rotation PASS, reflection HODGE FAIL (3/3 expected classifications). First negative-control halt is Hodge-type failure. A positive abstract candidate does not supply an actual projective K3 realization or an algebraic cycle, so STOP at the realization/certificate gate. This neither proves nor refutes the Hodge conjecture. An Oct-2026 broad K3-product proof claim was withdrawn. Preserve `{{ i + h }}`, 3 witnesses, no quorum, ASCII every bound, RQT-068 freeze untouched.
