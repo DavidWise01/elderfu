@@ -269,3 +269,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-094 — Algebraic Künneth projector construction on elliptic E
 
 [Executed exact Python check](./rqt-094.py) · [full ASCII and certificate boundary](./rqt-094.md). The multiplication maps [0],[1],[2] induce actions m^k on H^k(E,Q), k=0,1,2. Rational linear combinations of their (correctly oriented) graph correspondences yield degree projectors Pi0/Pi1/Pi2 with identity matrix in exact arithmetic. PASS on this established elliptic example. **STOP at general X**: no universal construction of corresponding algebraic degree projectors was supplied; the Hodge conjecture remains open. Preserve `{[(i)]}`, `{{ i + h }}`, 3 witnesses, no quorum, ASCII every boundary; RQT-068 freeze unchanged.
+
+## RQT-095 — Fail-stop at Lefschetz inverse algebraicity
+
+[Reproducible control test](./rqt-095.py) · [Full ASCII audit](./rqt-095.md). For CP³, L³:H⁰→H⁶ and L:H²→H⁴ give exact one-dimensional isomorphisms. Independent Python verification passed. Hard Lefschetz provides an abstract inverse on arbitrary smooth projective X, but no universal **algebraic correspondence** realizing that inverse is supplied. This is Lefschetz standard conjecture B, unresolved in general; thus **STOP** at algebraic witness. Not evidence against Hodge. `{{ i + h }}` and `{[(i)]}` maintained, no quorum, previous freeze unchanged.
