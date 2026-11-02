@@ -289,3 +289,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-099 — Hodge-type gate before K3 tensor cycle search
 
 [Reproducible script](./rqt-099.py) · [Full ASCII and fail-stop](./rqt-099.md). An abstract rank-two K3-type period plane has omega=e1+i e2. A rational endomorphism M=[[a,b],[c,d]] preserves the Hodge decomposition iff a=d and c=-b. Python exact checks: identity PASS, quarter-turn rotation PASS, reflection HODGE FAIL (3/3 expected classifications). First negative-control halt is Hodge-type failure. A positive abstract candidate does not supply an actual projective K3 realization or an algebraic cycle, so STOP at the realization/certificate gate. This neither proves nor refutes the Hodge conjecture. An Oct-2026 broad K3-product proof claim was withdrawn. Preserve `{{ i + h }}`, 3 witnesses, no quorum, ASCII every bound, RQT-068 freeze untouched.
+
+## RQT-100 — Concrete Fermat quartic K3 automorphism and graph witness
+
+[Exact reproducible SymPy test](./rqt-100.py) · [Full ASCII certificate](./rqt-100.md). Fermat quartic S:x⁴+y⁴+z⁴+w⁴=0, automorphism g:[x:y:z:w]↦[ix:y:z:w] preserves S, has order 4 and determinant i. Its algebraic graph Γ_g⊂S×S witnesses the associated Hodge correspondence, with g* on H^{2,0} acting by i via residue. This certifies one correspondence, not the algebraicity of every rational Hodge class on S×S. **STOP** at missing completeness of algebraic cycle span. Preserve `{{ i + h }}`, ASCII every boundary, 3 witnesses, no quorum, and RQT-068 freeze.
