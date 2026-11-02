@@ -261,3 +261,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-092 — {{ i + h }} Hodge conjecture FAIL-STOP
 
 [Interactive fail-stop](./rqt-092.html) · [ASCII / proof obligations](./rqt-092.md). Arbitrary smooth complex projective X; rational Künneth component h of the algebraic diagonal in Y=X×X. Conditioned on X being smooth projective, input/category, rationality, Hodge type pass by known Hodge/Künneth properties. Halt at missing independently verified codimension-d algebraic cycle whose class equals h. Later verification and universal proof gates not executed. A halt is not disproof; the total diagonal being algebraic is insufficient to establish its individual components are algebraic cycles. Preserve three witnesses, no quorum, immutable RQT-068 freeze.
+
+## RQT-093 — Executed `{{ i + h }}` with exact arithmetic
+
+[Executed proof-obligation record](./rqt-093.md) · [Reproducible Python test](./rqt-093.py). Concrete X=CP², Y=X×X: diagonal class a²+ab+b²; component witnesses point×CP², CP¹×CP¹, CP²×point. Exact intersection pairing matrix identity, diagonal pairing (1,1,1) — PASS. For arbitrary X, no cycle construction certified: **STOP**, not a counterexample or resolution of Hodge. Freeze RQT-068 unchanged.
