@@ -265,3 +265,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-093 — Executed `{{ i + h }}` with exact arithmetic
 
 [Executed proof-obligation record](./rqt-093.md) · [Reproducible Python test](./rqt-093.py). Concrete X=CP², Y=X×X: diagonal class a²+ab+b²; component witnesses point×CP², CP¹×CP¹, CP²×point. Exact intersection pairing matrix identity, diagonal pairing (1,1,1) — PASS. For arbitrary X, no cycle construction certified: **STOP**, not a counterexample or resolution of Hodge. Freeze RQT-068 unchanged.
+
+## RQT-094 — Algebraic Künneth projector construction on elliptic E
+
+[Executed exact Python check](./rqt-094.py) · [full ASCII and certificate boundary](./rqt-094.md). The multiplication maps [0],[1],[2] induce actions m^k on H^k(E,Q), k=0,1,2. Rational linear combinations of their (correctly oriented) graph correspondences yield degree projectors Pi0/Pi1/Pi2 with identity matrix in exact arithmetic. PASS on this established elliptic example. **STOP at general X**: no universal construction of corresponding algebraic degree projectors was supplied; the Hodge conjecture remains open. Preserve `{[(i)]}`, `{{ i + h }}`, 3 witnesses, no quorum, ASCII every boundary; RQT-068 freeze unchanged.
