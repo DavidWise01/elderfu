@@ -293,3 +293,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-100 — Concrete Fermat quartic K3 automorphism and graph witness
 
 [Exact reproducible SymPy test](./rqt-100.py) · [Full ASCII certificate](./rqt-100.md). Fermat quartic S:x⁴+y⁴+z⁴+w⁴=0, automorphism g:[x:y:z:w]↦[ix:y:z:w] preserves S, has order 4 and determinant i. Its algebraic graph Γ_g⊂S×S witnesses the associated Hodge correspondence, with g* on H^{2,0} acting by i via residue. This certifies one correspondence, not the algebraicity of every rational Hodge class on S×S. **STOP** at missing completeness of algebraic cycle span. Preserve `{{ i + h }}`, ASCII every boundary, 3 witnesses, no quorum, and RQT-068 freeze.
+
+## RQT-101 — Fermat quartic 64 diagonal automorphism graphs
+
+[Exact enumeration](./rqt-101.py) · [Full ASCII and fail-stop audit](./rqt-101.md). The group (μ₄)⁴/μ₄ yields 64 algebraic projective automorphisms of the Fermat quartic. On holomorphic 2-form, eigenvalue i^(a+b+c), with 16 maps at each phase. The rational span of the four phase actions on its rank-two transcendental subspace is dimension two (I,J). Each map has an explicit algebraic graph. **STOP**: no full 22-dimensional cohomology-action matrix or proof of complete rational Hodge cycle span on S×S has been supplied. Do not mistake this limited representation calculation for a general Hodge solution. Preserve `{{ i + h }}`, three witnesses, ASCII every boundary, no quorum, immutable RQT-068 freeze.
