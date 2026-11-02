@@ -253,3 +253,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-090 — Blind Hodge caliper, rational reconstruction
 
 [Interactive full-ASCII test](./rqt-090.html). On X=CP1×CP1 with a²=b²=0 and ∫ab=1, seeded hidden rational class alpha=p a+q b is reconstructed solely from ∫alpha a=q and ∫alpha b=p. Exact normalized fractions; a 100-seed programmatic audit button; three independent conceptual witness reports for measurement, reconstruction, verification (not voting/quorum). Construction of rational linear combinations of algebraic fibers is a known case of Hodge and not a general result. `{[(i)]}` retains brace=Waldo, box=space, toroid=state; sub-Planck claims are unrelated to this proof. Frozen RQT-068 untouched.
+
+## RQT-091 — Codimension-two rational Hodge caliper
+
+[Full ASCII exact symbolic interactive test](./rqt-091.html) for X=CP²×CP², H*(X,Q)=Q[a,b]/(a³,b³). An unknown alpha=p a²+q ab+r b² yields intersection vector (r,q,p) with a²,ab,b². Matrix [[0,0,1],[0,1,0],[1,0,0]] has determinant -1 and exact inverse itself, reconstructing p,q,r. Their geometric representatives are p(point×CP²)+q(line×line)+r(CP²×point). Code exposes deterministic seeded tests and 100-case audit, not independently browser-verified. This entire class of examples has algebraic generators and does not resolve the Hodge conjecture for arbitrary varieties. Original `{[(i)]}` semantics and ASCII at each bound; frozen RQT-068 unaffected.
