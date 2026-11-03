@@ -313,3 +313,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-106 — Nikulin quotient / rational transcendental inverse
 
 [Exact 25-vector model](./rqt-106.py) · [Full ASCII and fail-stop](./rqt-106.md). For the Fermat quartic Nikulin quotient-resolution correspondence Γ:S⇢Y, the algebraic graph and its transpose satisfy ΓᵗΓ=2id on T(S)⊗Q and ΓΓᵗ=2id on T(Y)⊗Q. Accordingly (1/2)Γᵗ inverts the transcendental map. Rational basis model with T(S)=diag(8,8), T(Y)=diag(4,4) passes 25 exact vectors; basis correspondence is a theorem-based normalization, not independently extracted period data. **STOP** on all of H²: ΓᵗΓ=id+ι* kills anti-invariant algebraic classes. Neither Hodge conjecture proved nor disproved. `{{ i + h }}` and `{[(i)]}` maintained; frozen RQT-068 unchanged.
+
+## RQT-107 — Recover Nikulin eigenspaces with algebraic projectors
+
+[Exact script](./rqt-107.py) · [Full ASCII and proof boundary](./rqt-107.md). Nikulin involution on Fermat K3 induces H²(S,Q)=H²_+⊕H²_- of ranks 14 and 8. Rational algebraic correspondences P±=(Δ_S±Γ_ι)/2 satisfy idempotence, mutual orthogonality, and P++P-=identity. The quotient composition is 2P+ and kills all 8 anti-invariant directions. An exact 22D eigenbasis-model test PASS. **STOP**: full H² reconstruction requires retaining anti-invariant information from original S; quotient-only data cannot recover it. No new Hodge proof. Canonical `{[(i)]}`, `{{ i + h }}`, 3 witnesses/no quorum, ASCII-every-boundary preserved; RQT-068 freeze untouched.
