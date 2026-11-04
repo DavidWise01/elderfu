@@ -38,7 +38,7 @@ rot=s.Matrix([rotall[j] for j in piv])
 q=s.factor((v.T*Bi*v)[0])
 cross=s.factor((v.T*Bi*rot)[0])
 assert s.factor(cross-a*a+a*b-b*b)==0
-assert (rot.T*Bi*rot)[0]==q
+assert s.simplify((rot.T*Bi*rot)[0]-q)==0
 choices=[(x,y) for x in range(-8,9) for y in range(-8,9) if x*x-x*y+y*y==1]
 assert len(choices)==6
 U=g['U'];R=Bi*G.extract(piv,[perm[j] for j in piv]);J=s.Matrix([[0,-1],[1,0]])
