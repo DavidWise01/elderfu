@@ -501,3 +501,7 @@ Canonical author expression, byte-for-byte: `[h(i[h2(i[h3(i{h+i})])])]`. Levels 
 ## RQT-153 — Tate degree-zero norm quotient
 
 [Executable test](./rqt-153.py) · [Full ASCII certificate](./rqt-153.md). The exact Fermat K3 integral norm N=I+X+X²+X³ has N(M)=M^X=Z*h, so Tate H^0(C4,M)=0. The Smith form on the primitive norm kernel gives Tate H^-1(C4,M)=(Z/4)^6. Norm surjectivity does not yield an equivariant integral section; the connecting obstruction has order four and the unique rational fixed preimage of h is h/4. Next RQT-154: compare fixed-point maps with unrestricted norms. The general Hodge conjecture remains OPEN. Preserve immutable RQT-068, `{{ i + h }}`, .dlw, cubit and ENDER.
+
+## RQT-154 — Fixed-point exactness and the norm index
+
+[Executable certificate](./rqt-154.py) · [Full ASCII and proof](./rqt-154.md). For M=H²(Fermat K3,Z), X⁴=I, N=I+X+X²+X³, K=ker N and primitive h, N(e0)=h makes N:M→Z*h surjective. Taking C4-invariants yields K^X=0 and the map M^X=Z*h→(Z*h)^X=Z*h given by **multiplication by four**, with **cokernel Z/4**. The connecting homomorphism maps h to [(X−I)e0], of exact order four in H¹(C4,K)=(Z/4)^7, with kernel 4Z*h; quotienting by that class recovers H¹(C4,M)=(Z/4)^6. Distinguish **coker(N|M^X)=Z/4** from Tate Hhat⁰=M^X/N(M)=0. **Next RQT-155:** rational invariant projector N/4 and its denominator. Special marking retains RQT-118/121 Pham orientation dependencies, general Hodge conjecture OPEN. Three independent witnesses/no quorum, `{{ i + h }}`, .dlw, ENDER, cubit and immutable RQT-068.
