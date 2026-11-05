@@ -18,7 +18,7 @@ def residue(v):return tuple(s.Rational(x)%1 for x in v)
 labels=[]
 for a in (0,2):
  for bits in product((0,1),repeat=7):
-  v=sum(((a,)+bits)[j]*V[j] for j in range(8))
+  v=sum((((a,)+bits)[j]*V[j] for j in range(8)),s.zeros(22,1))
   assert residue(A*v)==residue(v)
   assert residue(2*v)==(s.Integer(0),)*22
   labels.append(residue(v))
