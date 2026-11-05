@@ -2,8 +2,9 @@
 """RQT-146: arbitrary integral vector wraparound defect; exact arithmetic."""
 from pathlib import Path
 import sympy as s,json
+from runpy import run_path
 p=Path(__file__).resolve().parent
-X=s.sympify((p/'rqt-133-X-22x22.txt').read_text(),locals={'Matrix':s.Matrix})
+X=run_path(str(p/'rqt-133.py'))['X']
 I=s.eye(22); N=I+X+X**2+X**3
 assert X**4==I and N.rank()==1
 h=s.Matrix([1,1,1,1]+[0]*18)
